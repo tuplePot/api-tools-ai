@@ -1,9 +1,9 @@
-import { cors } from "@elysia/cors";
 import { openapi } from "@elysia/openapi";
 import { Elysia } from "elysia";
 import { authToken } from "./modules/auth/token";
 import { tools } from "./modules/tools";
 import { Registry } from "./modules/tools/registry";
+import { corsPlugin } from "./plugins/cors";
 import { Db } from "./utils/db";
 
 Registry.boot();
@@ -11,7 +11,7 @@ await Db.connect();
 
 export function createApp() {
 	return new Elysia()
-		.use(cors())
+		.use(corsPlugin)
 		.use(openapi())
 		.get("/health", () => ({ status: "ok" }))
 		.use(authToken)
