@@ -1,12 +1,6 @@
 {
-  "version": 2,
   "bunVersion": "1.x",
-  "functions": {
-    "src/app.ts": {
-      "maxDuration": 30
-    }
-  },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/src/app" }
+    { "source": "/(.*)", "destination": "/api/index" }
   ]
 }
