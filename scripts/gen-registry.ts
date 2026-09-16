@@ -53,9 +53,7 @@ for (let i = 0; i < skillDirs.length; i++) {
     input: _m${i}.input,
     output: _m${i}.output,
     render: _s${i}.render as (input: unknown) => string,
-    refine: typeof _s${i}.refine === "function"
-      ? (_s${i}.refine as (output: unknown, input: unknown) => unknown)
-      : undefined,
+    refine: (_s${i} as unknown as { refine?: (output: unknown, input: unknown) => unknown }).refine,
   }`);
 }
 
