@@ -30,5 +30,6 @@
 		"bun-types": "latest",
 		"typescript": "^5.7.0"
 	},
-	"module": "src/index.js"
+	"module": "src/index.js",
+	"type": "module"
 }
