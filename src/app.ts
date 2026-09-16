@@ -3,6 +3,11 @@ import { openapi } from "@elysia/openapi";
 import { Elysia } from "elysia";
 import { authToken } from "./modules/auth/token";
 import { tools } from "./modules/tools";
+import { Registry } from "./modules/tools/registry";
+import { Db } from "./utils/db";
+
+Registry.boot();
+await Db.connect();
 
 export function createApp() {
 	return new Elysia()
@@ -18,3 +23,5 @@ export function createApp() {
 			return { error: "Internal server error" };
 		});
 }
+
+export default createApp();
