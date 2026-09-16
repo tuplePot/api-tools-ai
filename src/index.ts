@@ -1,7 +1,10 @@
-import { Elysia } from "elysia";
+import { createApp } from "./app";
+import { Registry } from "./modules/tools/registry";
+import { Db } from "./utils/db";
 
-const app = new Elysia().get("/", () => "Hello Elysia").listen(3000);
+Registry.boot();
+await Db.connect();
 
-console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
-);
+createApp().listen(Number(process.env.PORT ?? 3000), ({ hostname, port }) => {
+	console.log(`[Server] http://${hostname}:${port}`);
+});

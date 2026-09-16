@@ -1,0 +1,99 @@
+{
+	"phrases": [
+		{
+			"pattern": "Berikut(?:\\s+ini)?\\s+adalah",
+			"note": "meta-komentar pembuka"
+		},
+		{
+			"pattern": "Berikut(?:\\s+ini)?\\s+(?:merupakan|penjelasan|cara|langkah|daftar|beberapa)",
+			"note": "meta-komentar pembuka"
+		},
+		{
+			"pattern": "Semoga\\s+(?:bermanfaat|membantu|berguna|jawaban(?:\\s+ini)?\\s+membantu)",
+			"note": "penutup chat"
+		},
+		{
+			"pattern": "Jika\\s+(?:Anda\\s+)?(?:masih\\s+)?(?:ada|punya|memiliki)\\s+pertanyaan",
+			"note": "penutup chat"
+		},
+		{
+			"pattern": "Jangan\\s+ragu\\s+(?:untuk\\s+)?(?:bertanya|menghubungi)",
+			"note": "penutup chat"
+		},
+		{
+			"pattern": "Rekomendasi\\s+ini\\s+(?:bagus|baik|tepat)\\s+karena",
+			"note": "meta-penjelasan AI"
+		},
+		{
+			"pattern": "Saya\\s+(?:sarankan|merekomendasikan|menyarankan)\\s+(?:agar\\s+)?(?:Anda\\s+)?(?:untuk\\s+)?",
+			"note": "pembicara AI"
+		},
+		{
+			"pattern": "Anda\\s+bisa\\s+(?:mencoba|mempertimbangkan|menggunakan)",
+			"note": "sapaan pembaca AI"
+		},
+		{
+			"pattern": "Perlu\\s+Anda\\s+(?:ketahui|pahami|perhatikan)",
+			"note": "sapaan pembaca AI"
+		},
+		{
+			"pattern": "Penting\\s+untuk\\s+(?:dicatat|diketahui|dipahami)\\s+bahwa",
+			"note": "pembuka kosong"
+		},
+		{
+			"pattern": "Perlu\\s+(?:dicatat|diketahui)\\s+bahwa",
+			"note": "pembuka kosong"
+		},
+		{
+			"pattern": "Di\\s+era\\s+(?:digital|modern|globalisasi|teknologi)[^,\\.]*(?:ini|kini)",
+			"note": "pembuka klise"
+		},
+		{
+			"pattern": "Dalam\\s+era\\s+(?:digital|modern|globalisasi)[^,\\.]*(?:ini|kini)",
+			"note": "pembuka klise"
+		},
+		{
+			"pattern": "Sebagai\\s+(?:kesimpulan|penutup|rangkuman)",
+			"note": "penutup rangkuman"
+		},
+		{
+			"pattern": "Secara\\s+(?:keseluruhan|umum|garis\\s+besar),?\\s+(?:dapat\\s+)?(?:disimpulkan|dikatakan)",
+			"note": "penutup rangkuman"
+		},
+		{
+			"pattern": "Pada\\s+akhirnya,?\\s+(?:dapat\\s+)?(?:disimpulkan|dikatakan)",
+			"note": "penutup rangkuman"
+		}
+	],
+	"words": [
+		"krusial",
+		"vital",
+		"holistik",
+		"seamless",
+		"revolusioner",
+		"mendalam",
+		"komprehensif",
+		"sinergis",
+		"inovatif",
+		"transformatif",
+		"dinamis",
+		"adaptif",
+		"proaktif",
+		"strategis",
+		"berkelanjutan",
+		"terpadu",
+		"terdepan",
+		"mutakhir"
+	],
+	"patterns": [
+		{
+			"pattern": "bukan\\s+\\S+(?:\\s+\\S+)?,?\\s+melainkan",
+			"note": "pola kontras AI"
+		},
+		{ "pattern": "—[^—]+—[^—]+—", "note": "em-dash bertumpuk" },
+		{
+			"pattern": "#{1,6}\\s+[^\\n]*(?:🎯|✅|💡|🚀|⚡|🔥|💪|🌟|✨|🎉|👇|👆|📌|🔑|💎)",
+			"note": "heading dengan emoji"
+		}
+	]
+}

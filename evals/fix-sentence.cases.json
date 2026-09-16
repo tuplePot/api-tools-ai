@@ -1,0 +1,184 @@
+[
+	{
+		"id": "baku-01",
+		"text": "Resiko investasi saham cukup tinggi.",
+		"expects": [
+			{ "fragment": "Resiko", "replacement": "Risiko", "type": "baku" }
+		]
+	},
+	{
+		"id": "baku-02",
+		"text": "Aktifitas fisik sangat penting untuk kesehatan.",
+		"expects": [
+			{ "fragment": "Aktifitas", "replacement": "Aktivitas", "type": "baku" }
+		]
+	},
+	{
+		"id": "baku-03",
+		"text": "Saya minta ijin untuk tidak masuk hari ini.",
+		"expects": [{ "fragment": "ijin", "replacement": "izin", "type": "baku" }]
+	},
+	{
+		"id": "baku-04",
+		"text": "Dia memberikan nasehat yang sangat berguna.",
+		"expects": [
+			{ "fragment": "nasehat", "replacement": "nasihat", "type": "baku" }
+		]
+	},
+	{
+		"id": "baku-05",
+		"text": "Praktek kedokteran harus mengikuti standar etika.",
+		"expects": [
+			{ "fragment": "Praktek", "replacement": "Praktik", "type": "baku" }
+		]
+	},
+	{
+		"id": "imbuhan-01",
+		"text": "Kebijakan ini akan mempengaruhi seluruh karyawan.",
+		"expects": [
+			{
+				"fragment": "mempengaruhi",
+				"replacement": "memengaruhi",
+				"type": "imbuhan"
+			}
+		]
+	},
+	{
+		"id": "imbuhan-02",
+		"text": "Jangan merubah isi dokumen tanpa izin.",
+		"expects": [
+			{ "fragment": "merubah", "replacement": "mengubah", "type": "imbuhan" }
+		]
+	},
+	{
+		"id": "imbuhan-03",
+		"text": "Kami akan mentransfer dana besok pagi.",
+		"expects": []
+	},
+	{
+		"id": "mubazir-01",
+		"text": "Permasalahan yang mana harus diselesaikan segera.",
+		"expects": [
+			{ "fragment": "yang mana", "replacement": "yang", "type": "mubazir" }
+		]
+	},
+	{
+		"id": "mubazir-02",
+		"text": "Hasil kerja ini adalah merupakan prestasi tim.",
+		"expects": [
+			{
+				"fragment": "adalah merupakan",
+				"replacement": "merupakan",
+				"type": "mubazir"
+			}
+		]
+	},
+	{
+		"id": "mubazir-03",
+		"text": "Dia tinggal di kota di mana banyak gedung tinggi.",
+		"expects": [
+			{ "fragment": "di mana", "replacement": "yang", "type": "mubazir" }
+		]
+	},
+	{
+		"id": "mubazir-04",
+		"text": "Adapun masalah utama adalah kurangnya anggaran.",
+		"expects": [{ "fragment": "Adapun", "replacement": "", "type": "mubazir" }]
+	},
+	{
+		"id": "ejaan-01",
+		"text": "Dia bekerja keras,namun hasilnya belum memuaskan.",
+		"expects": [
+			{
+				"fragment": "keras,namun",
+				"replacement": "keras, namun",
+				"type": "ejaan"
+			}
+		]
+	},
+	{
+		"id": "ejaan-02",
+		"text": "Proyek ini akan selesai pada bulan Februari 2025",
+		"expects": [{ "fragment": "2025", "replacement": "2025.", "type": "ejaan" }]
+	},
+	{
+		"id": "rancu-01",
+		"text": "Laporan itu sudah dikirim ke bagian keuangan oleh saya kemarin sore kepada direktur.",
+		"expects": [{ "type": "rancu" }]
+	},
+	{
+		"id": "rancu-02",
+		"text": "Dengan adanya kebijakan baru ini maka semua karyawan wajib mengikuti pelatihan.",
+		"expects": [{ "type": "rancu" }]
+	},
+	{
+		"id": "kombinasi-01",
+		"text": "Resiko yang mana harus di pertimbangkan sebelum berinvestasi.",
+		"expects": [
+			{ "fragment": "Resiko", "replacement": "Risiko", "type": "baku" },
+			{ "fragment": "yang mana", "type": "mubazir" }
+		]
+	},
+	{
+		"id": "kombinasi-02",
+		"text": "Aktifitas yang mana mempengaruhi produktifitas harus dianalisa.",
+		"expects": [
+			{ "fragment": "Aktifitas", "replacement": "Aktivitas", "type": "baku" },
+			{ "fragment": "yang mana", "type": "mubazir" },
+			{
+				"fragment": "mempengaruhi",
+				"replacement": "memengaruhi",
+				"type": "imbuhan"
+			},
+			{
+				"fragment": "produktifitas",
+				"replacement": "produktivitas",
+				"type": "baku"
+			}
+		]
+	},
+	{
+		"id": "bersih-01",
+		"text": "Investasi saham memerlukan pertimbangan yang matang.",
+		"expects": []
+	},
+	{
+		"id": "bersih-02",
+		"text": "Kami mengundang Anda untuk hadir dalam acara peluncuran produk.",
+		"expects": []
+	},
+	{
+		"id": "bersih-03",
+		"text": "Laporan keuangan telah disampaikan kepada dewan direksi.",
+		"expects": []
+	},
+	{
+		"id": "bersih-04",
+		"text": "Risiko perlu diidentifikasi sebelum proyek dimulai.",
+		"expects": []
+	},
+	{
+		"id": "teknis-01",
+		"text": "Framework React.js digunakan untuk membangun UI yang interaktif.",
+		"expects": []
+	},
+	{
+		"id": "teknis-02",
+		"text": "API ini mengembalikan respon dalam format JSON.",
+		"expects": [
+			{ "fragment": "respon", "replacement": "respons", "type": "baku" }
+		]
+	},
+	{
+		"id": "gaya-santai-01",
+		"text": "Kayaknya sih aktifitas lo terlalu padat deh.",
+		"expects": [
+			{ "fragment": "aktifitas", "replacement": "aktivitas", "type": "baku" }
+		]
+	},
+	{
+		"id": "gaya-santai-02",
+		"text": "Oke, nanti gue coba dulu ya.",
+		"expects": []
+	}
+]
